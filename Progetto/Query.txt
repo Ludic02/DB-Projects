@@ -1,0 +1,20 @@
+//query incremento vittorie 1 pilota
+
+db.Scuderie.updateOne({"pilota1.name": 'Sergio Perez'}, {$inc: {"pilota1.vittorie": 1}})
+db.Scuderie.updateOne({"pilota2.name": 'Sergio Perez'}, {$inc: {"pilota2.vittorie": 1}})
+
+//query incremento all
+
+db.Scuderie.updateMany({}, {$inc: {"pilota1.N°GP":1, "pilota2.N°GP":1}});
+
+// query aggiornamento nuovo grampremio
+
+db.Circuiti.updateMany({name:'Canada Gp'}, {$set: {"2023.vincitore":'Charles Leclerc', "2023.scuderia":'Scuderia Ferrari', "2023.Pole":'1:14.789, Max Verstappen, Red Bull Racing', "2023.giro veloce":'1:17.965, Charles Leclerc, Ferrari'}})
+
+// query inserimento nuovo anno
+
+db.Circuiti.updateMany({}, {$set: {"2024":{"vincitore":null, "scuderia":null, "Pole":null, "giro veloce":null}}});
+
+// query per contare 
+
+db.Circuiti.countDocuments({"2022.vincitore": 'Charles Leclerc'}, {$count:{}})
