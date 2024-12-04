@@ -1,0 +1,158 @@
+
+.pay-dashboard {
+    padding: 20px;
+}
+
+.balance-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.balance-amount {
+    font-size: 2.5em;
+    color: #2c3e50;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card-list {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.action-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.action-button:hover {
+    background-color: #2980b9;
+}
+
+.action-button.danger {
+    background-color: #e74c3c;
+}
+
+.action-button.danger:hover {
+    background-color: #c0392b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.transaction-list {
+    margin-top: 20px;
+}
+
+.transaction-item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.transaction-info {
+    flex-grow: 1;
+}
+
+
+
+.transaction-name {
+    flex-grow: 1;
+    padding-right: 20px; /* Spazio tra il nome e l'importo */
+    text-align: left;
+}
+
+.transaction-date {
+    font-size: 0.85em;
+    color: #666;
+}
+
+
+
+.transaction-amount {
+    font-weight: 500;
+    font-size: 1.1em;
+    min-width: 100px;
+    text-align: right;
+    padding-left: 20px;
+}
+
+.transaction-item:hover {
+    background-color: #f8f9fa;
+}
+
+
+
+
+.transaction-item:last-child {
+    border-bottom: none;
+}
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+}
+
+.status-completed {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.status-pending {
+    background-color: #f1c40f;
+    color: black;
+}
+
+.status-failed {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
+.alert-danger {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
